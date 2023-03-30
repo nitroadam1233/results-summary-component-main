@@ -1,0 +1,225 @@
+* {
+    font-family: Hanken Grotesk;
+}
+
+body {
+    z-index: -999;
+}
+
+/*parent container*/ 
+.parent-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    height: 800px;
+    margin: auto;
+    border: 3px solid black;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    z-index: 999;
+}
+
+/* outer container */
+.outer-container {
+    display: flex;
+    margin: auto;
+    width: 55%;
+    height: 55%;
+    flex-direction: row;
+}
+
+/* left container */
+.left-container {
+    display: flex;
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    box-shadow: 4px 20px 20px 10px hsla(241, 100%, 89%, 0.185);
+    flex-direction: column;
+    width: 50%;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-header1 {
+    color: hsl(241, 100%, 89%);
+    margin-top: 0;
+    letter-spacing: 0.5px;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+/* round score container */
+.score-round {
+    display: flex;
+    background-image: linear-gradient(hsla(256, 72%, 45%, 1), hsla(241, 72%, 46%, 0));
+    flex-direction: column;
+    padding: 2rem 3rem;
+    border-radius: 100px;
+}
+
+#num {
+    font-size: 60px;
+    font-weight: bold;
+    margin: auto;
+    color: white;
+}
+
+#out-of-100 {
+    font-size: 15px;
+    margin: auto;
+    color: rgb(128,111,255);
+}
+
+#description {
+    text-align: center;
+    font-size: 16px;
+    color:  hsl(241, 100%, 85%);
+    width: 75%;
+    margin-top: 10px;
+}
+
+.left-header2 {
+    color: hsl(0, 0%, 100%);
+    font-size: 28px;
+    margin-bottom: 0;
+}
+
+
+/* the right container */
+.right-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    box-shadow: 4px 25px 25px 2px hsla(241, 100%, 89%, 0.301);
+    z-index: -1; 
+    right: 7%;
+}
+
+/* "summary" in the right container */
+.summary-container {
+    margin-right: 7.2rem;
+}
+
+#summary-heading {
+    margin-top: 5px;
+    font-size: 20.1px;
+    color: hsl(224, 30%, 27%)
+}
+
+/* the four boxes: reaction, memory, verbal, visual */
+.reaction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsla(0, 100%, 67%, 0.103);
+    margin-left: 40px;
+    padding: 15px 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+
+}
+
+.memory {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsla(39, 100%, 56%, 0.068);
+    padding: 15px 15px;
+    margin-left: 40px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.verbal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+    background-color: hsla(166, 100%, 37%, 0.068);
+    padding: 15px 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsla(234, 85%, 45%, 0.062);
+    margin-left: 40px;
+    padding: 15px 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* word padding for the text in the 4 boxes */
+.word-reaction {
+    color: hsl(0, 56%, 53%);
+    font-weight: 700px;
+    padding-left: 10px;
+    padding-right: 60px;
+}
+
+.word-memory {
+    color: hsl(39, 100%, 56%);
+    padding-left: 10px;
+    padding-right: 65px;
+}
+.word-verbal {
+    color: hsl(166, 100%, 37%);
+    padding-left: 10px;
+    padding-right: 78px;
+}
+.word-visual {
+    color: hsl(234, 85%, 45%);
+    padding-left: 10px;
+    padding-right: 78px;
+}
+
+/* the score for the 4 boxes in the right container */
+.score {
+    padding-right: 7px;
+    color: hsl(224, 30%, 27%);
+    font-weight: 600;
+}
+
+/*the out of one hundred text in the right container */
+.one-hundred {
+    color: rgb(172, 166, 170);
+    font-weight: 900;
+}
+
+/* continue button */
+.continue {
+    background-color: rgb(48, 59, 89);
+    text-decoration: none;
+    color: white;
+    padding: 13px 90px;
+    border-radius: 130px;
+    font-size: 15.5px;
+    margin-left: 35px;
+    font-weight: 520;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+/* mobile design */
+@media only screen and (max-width: 1200px) {
+    .outer-container {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
